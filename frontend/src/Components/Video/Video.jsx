@@ -38,7 +38,7 @@ const Video = () => {
                                 />
                                 <button
                                     onClick={handleClose}
-                                    className='absolute top-[-10px] right-[-50px] bg-white text-main w-[40px] h-[40px] rounded-full flex justify-center items-center text-xl
+                                    className='absolute top-[5px] right-[5px] lg:top-[0] lg:right-[-50px] bg-white text-main w-[25px] h-[25px] lg:w-[40px] lg:h-[40px] rounded-full flex justify-center items-center lg:text-xl
                                     transition ease-in-out duration-300 hover:bg-main hover:text-white cursor-pointer'
                                 >
                                     <FaTimes />

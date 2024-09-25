@@ -9,12 +9,14 @@ import Partner from './Components/Partner/Partner'
 import Video from './Components/Video/Video'
 import Counter from './Components/Counter/Counter'
 import Article from './Components/Article/Article'
+import Search from './Components/Search/Search'
 
 const Pages = () => {
   return (
     <div>
       <Banner/>
       <Filter/>
+      <Search/>
       <Services/>
       <Cars/>
       <Solution/>

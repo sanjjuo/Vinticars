@@ -163,3 +163,31 @@ export const article = [
     },
 
 ]
+
+export const body = [
+    {
+        id:"1",
+        image:"convertible.png",
+        title:"Convertible"
+    },
+    {
+        id:"2",
+        image:"coupe.png",
+        title:"Coupe"
+    },
+    {
+        id:"3",
+        image:"hatchback.png",
+        title:"Hatchback"
+    },
+    {
+        id:"4",
+        image:"sedan.png",
+        title:"Sedan"
+    },
+    {
+        id:"5",
+        image:"suv.png",
+        title:"SUV"
+    },
+]

@@ -9,6 +9,8 @@ import { BiLink } from "react-icons/bi";
 import { PiArrowsLeftRightFill } from "react-icons/pi";
 import { CgMaximize } from "react-icons/cg";
 import { cars } from '../../Data';
+import { SlCalender } from "react-icons/sl";
+import { TbManualGearbox } from "react-icons/tb";
 
 const Cars = () => {
     return (
@@ -21,7 +23,7 @@ const Cars = () => {
 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-4 mt-10">
                         {cars.map((item, index) => (
-                            <Card className="mt-6 w-full lg:w-96 rounded-none group cursor-pointer" key={index}>
+                            <Card className="mt-6 w-full lg:w-96 rounded-xl group cursor-pointer border" key={index}>
                                 <CardHeader className="relative h-56">
                                     <img
                                         src={item.image}
@@ -42,15 +44,12 @@ const Cars = () => {
                                 <CardBody>
                                     <Typography variant="h5" color="blue-gray" className="mb-0 cursor-pointer">
                                         {item.title}
+                                        <p className='text-main font-light text-base'>{item.company}</p>
                                     </Typography>
                                     <Typography>
-                                        <ul className='flex items-center justify-between mt-4'>
-                                            <li className='flex flex-col items-center cursor-default'>Year
-                                                <span className='font-bold'>{item.date}</span></li>
-                                            <li className='flex flex-col items-center cursor-default'>Company
-                                                <span className='font-bold'>{item.company}</span></li>
-                                            <li className='flex flex-col items-center cursor-default'>Transmission
-                                                <span className='font-bold'>{item.transmission}</span></li>
+                                        <ul className='flex items-center gap-10 mt-4'>
+                                            <li className='flex items-center gap-2 cursor-default'><SlCalender size={16}/>{item.date}</li>
+                                            <li className='flex items-center gap-2 cursor-default'><TbManualGearbox size={20}/>{item.transmission}</li>
                                         </ul>
                                     </Typography>
                                 </CardBody>

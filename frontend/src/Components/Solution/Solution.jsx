@@ -32,7 +32,7 @@ const Solution = () => {
                                     Consultation & Inspection for tailored advice on your car's needs.</li>
                             </ul>
                             <div>
-                                <ul className='mt-8 flex flex-col gap-10 lg:flex items-center lg:gap-20'>
+                                <ul className='mt-8 flex flex-col gap-10 lg:flex lg:flex-row items-center lg:gap-20'>
                                     <li><Button className='bg-main capitalize text-xl rounded-md font-normal hover:bg-subMain'>Our Services</Button></li>
                                     <li className='bg-customGray/20 w-[50px] h-[50px] rounded-full flex items-center justify-center hover:bg-main group cursor-pointer'><MdPhone className='text-main text-2xl group-hover:text-white'/></li>
                                     <li className='flex flex-col text-customGray cursor-default'>Call Anytime <span className='text-black font-semibold cursor-pointer'>+88 (9800) 6802</span></li>

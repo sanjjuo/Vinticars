@@ -17,7 +17,7 @@ const Banner = () => {
     };
     return (
         <>
-            <Slider {...settings} className='mt-[-160px] z-[-1]'>
+            <Slider {...settings} className='lg:mt-[-200px] z-[-1]'>
                 {/* <div> */}
                 {banner.map((item, index) => (
                     <div className='h-[500px] lg:h-[700px] relative' key={index}>
